@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <!-- starter HTML-dokumentet og setter språket til norsk -->
+
+    <meta charset="UTF-8">
+    <!-- gjør at æ ø å funker -->
+
+    <title>Jens C Borgenhaug</title>
+    <!-- tittelen som vises i fanen i nettleseren -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- kobler til css-filen så designet blir der -->
+</head>
+<body>
+
+<!-- header er toppen av nettsiden -->
+<header>
+    <!-- logo bilde -->
+    <img src="bilder/image-removebg-preview.png" alt="JCB logo" width="140">
+
+    <!-- h1 er hovedtittelen, derfor bare én -->
+    <h1 class="title">Jens Christian Borgenhaug</h1>
+
+    <!-- navigasjon som hopper til deler av siden -->
+    <nav>
+        <a href="#om">Om meg</a>
+        <a href="#prosjekter">Prosjekter</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+</header>
+
+<!-- hero-seksjon = første man ser på siden -->
+<section id="hero">
+  <h2>Hei, jeg er Jens!</h2>
+
+  <!-- kort intro om meg -->
+  <p>IM-elev med interesse for IT-utvikling, design og problemløsing.</p>
+
+  <!-- knapp som sender brukeren til prosjekter -->
+  <a href="#prosjekter" class="btn">Se prosjektene mine</a>
+</section>
+
+<!-- seksjon om meg -->
+<section id="om">
+    <div>
+        <h2>Om meg</h2>
+
+        <!-- tekst som forklarer hvem jeg er og hva jeg vil -->
+        <p>
+            Jeg heter Jens Christian Borgenhaug og er IM-elev på Åssiden vgs.
+            Jeg har vært interessert i IT siden 2024 og har som mål å bli IT-utvikler.
+            Jeg er lærevillig, motivert og interessert i både tekniske og kreative fag.
+            På fritiden driver jeg med kunst, skisser og kampsport, noe som har gitt
+            meg god disiplin og fokus.
+        </p>
+    </div>
+
+    <!-- bilde for å gjøre siden mer interessant visuelt -->
+    <img class="mediaDesign" src="bilder/Image__1_-removebg-preview.png"
+         alt="Media design av Jens" width="250">
+</section>
+
+<!-- ferdigheter jeg kan litt om -->
+<section id="ferdigheter">
+  <h2 class="FerdigheterHEAD">Ferdigheter</h2>
+
+  <!-- liste siden rekkefølge ikke er viktig -->
+  <ul class="skills">
+    <li>HTML & CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>Figma</li>
+    <li>Photoshop</li>
+  </ul>
+</section>
+
+<!-- prosjekter jeg har jobbet med -->
+<section id="prosjekter">
+    <h2 class="prosjektHEAD">Prosjekter</h2>
+
+    <!-- grid for å få prosjektene pent oppstilt -->
+    <div class="prosjekt-grid">
+
+        <!-- hvert prosjekt har egen div -->
+        <div class="prosjekt">
+            <h3>Filmplakat</h3>
+            <img src="bilder/Screenshot 2026-01-27 084147.jpg" alt="Filmplakat" width="150">
+            <p>Design av filmplakat laget i Photoshop.</p>
+        </div>
+
+        <div class="prosjekt">
+            <h3>Python Maze</h3>
+            <img src="bilder/Screenshot 2026-01-27 084215.jpg" alt="Python Maze" width="200">
+            <p>Program som finner beste vei gjennom en labyrint.</p>
+        </div>
+
+        <div class="prosjekt">
+            <h3>Figma Design</h3>
+            <img src="bilder/Screenshot 2026-01-27 084259.jpg" alt="Figma design" width="150">
+            <p>Butikkdesign laget i Figma.</p>
+        </div>
+
+        <div class="prosjekt">
+            <h3>Space Invaders</h3>
+            <img src="bilder/Screenshot 2026-01-27 084234.jpg" alt="Space Invaders" width="150">
+            <p>Forenklet spill laget med HTML og Python.</p>
+        </div>
+
+        <div class="prosjekt">
+            <h3>Text-Based RPG Game</h3>
+            <img src="bilder/Screenshot 2026-01-27 091319.jpg" alt="Text-based Rpg" width="150">
+            <p>Text basert spill laget med HTML, CSS og JavaScript.</p>
+        </div>
+
+        <div class="prosjekt">
+            <h3>Imitasjon nettside</h3>
+
+            <!-- to bilder fra samme prosjekt -->
+            <img src="bilder/Screenshot 2026-01-27 092702.jpg" alt="" width="150">
+            <img src="bilder/Screenshot 2026-01-27 092758.jpg" alt="" width="150">
+
+            <p>Nettside laget som skoleoppgave på IM1.</p>
+        </div>
+    </div>
+</section>
+
+<!-- kontaktinfo nederst på siden -->
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Email: jenserkul123@gmail.com</p>
+    <p>Mobil: +47 123 45 678</p>
+</section>
+
+</body>
+</html>
