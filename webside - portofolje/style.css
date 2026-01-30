@@ -1,0 +1,170 @@
+/* 
+RESET OG GRUNN:
+Her starter eg med reset så alt blir likt i alle nettlesere.
+Margin og padding blir satt til 0 så eg har full kontroll sjøl.
+Box sizing border box gjør at padding ikkje ødelegger bredden.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+TITTEL:
+Denne klassen er for navnet mitt i header.
+Stor font size for at navnet skal synes godt.
+*/
+.title {
+    font-size: 50px;
+}
+
+/* 
+BODY:
+Her setter eg skrifttype og bakgrunnsfarge.
+Valgte mørk grønn bakgrunn for rolig og profft inntrykk.
+Tekst er lys så den er lett og lese.
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #166C64;
+    color: #e9e9e9;
+    line-height: 1.6;
+}
+
+/* 
+HERO:
+Dette er første seksjonen brukeren ser.
+Alt er sentrert for ryddig oppsett.
+Padding gir luft rundt innholde.
+*/
+#hero {
+    text-align: center;
+    padding: 120px 40px;
+}
+
+/* 
+KNAPP:
+Knapp brukt i hero seksjonen.
+Rund form og blå farge for at den skal se klikkbar ut.
+*/
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #38bdf8;
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* 
+HEADER:
+Headeren ligger øverst og følger med når man scroller.
+Flex brukes for å plassere logo, navn og meny på linje.
+*/
+header {
+    background-color: #031A18;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* 
+NAVIGASJON:
+Lenker i menyen.
+Hover effekt viser hvilken link man peker på.
+*/
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* 
+SEKSJONER:
+Felles stil for alle sections.
+Max width så sida ikkje blir for bred.
+*/
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 40px;
+}
+
+/* 
+OM MEG:
+Flex brukes for tekst og bilde ved siden av hverandre.
+Bakgrunn skiller seksjonen fra resten.
+*/
+#om {
+    background-color: #031A18;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* 
+FERDIGHETER:
+Liste med ferdigheter.
+Flex wrap gjør at de går ned på ny linje på små skjermer.
+*/
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* 
+PROSJEKTER:
+Grid brukes så prosjektene tilpasser seg skjermstørrelse.
+Hover effekt gir litt animasjon.
+*/
+.prosjekt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* 
+KONTAKT:
+Siste seksjon med kontakt info.
+Sentrert tekst for ryddig avslutning.
+*/
+#kontakt {
+    background-color: #031A18;
+    color: white;
+    border-radius: 14px;
+    text-align: center;
+}
+
+/* 
+RESPONSIV:
+Media query for mobil.
+Gjør layout enklere på små skjermer.
+*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    #om {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
